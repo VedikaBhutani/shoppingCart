@@ -1,5 +1,6 @@
 package com.android.tonyvu.sc.demo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -9,6 +10,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,11 +33,14 @@ public class Recommend extends AppCompatActivity {
         try {
             obj = new JSONObject(loadJSONFromAsset());
             String rec = obj.getString(book), mystring="";
-            List<String> booklist = Arrays.asList(rec.split("\\s*,\\s*"));
+            ArrayList<String> booklist = new ArrayList<> (Arrays.asList(rec.split("\\s*,\\s*")));
             for(String i:booklist){
                 mystring = mystring + i + "\n";
             }
-            PrintRecommendations.setText(mystring);
+            Intent intent = new Intent(Recommend.this, HorizontalListView.class);
+            intent.putStringArrayListExtra("key", booklist);
+            startActivity(intent);
+            //PrintRecommendations.setText(mystring);
         } catch (JSONException e) {
             e.printStackTrace();
         }

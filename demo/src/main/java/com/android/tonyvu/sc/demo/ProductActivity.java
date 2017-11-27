@@ -96,7 +96,7 @@ public class ProductActivity extends AppCompatActivity {
                 Cart cart = CartHelper.getCart();
                 Log.d(TAG, "Adding product: " + product.getName());
                 cart.add(product, Integer.valueOf(spQuantity.getSelectedItem().toString()));
-                Intent intent = new Intent(ProductActivity.this, Recommendations.class);
+                Intent intent = new Intent(ProductActivity.this, HorizontalListView.class);
                 startActivity(intent);
             }
         });
