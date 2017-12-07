@@ -17,9 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProductActivity" />
-        <activity android:name=".HorizontalListView"/>
         <activity android:name=".ShoppingCartActivity" />
-        <activity android:name=".Recommend"/>
 
     </application>
 

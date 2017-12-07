@@ -13,7 +13,7 @@ public final class Constant {
         for (int i = 1; i < 11; i++) QUANTITY_LIST.add(i);
     }
 
-    public static final Product PRODUCT1 = new Product(1, "48", BigDecimal.valueOf(199.996), "Eragon and the fledgling dragon must navigate the dangerous terrain and dark enemies of an empire ruled by a king whose evil knows no bounds", "htc_one_m8");
+    public static final Product PRODUCT1 = new Product(1, "48", BigDecimal.valueOf(199.996), "Eragon and the fledgling dragon must navigate the dangerous terrain and dark enemies of an empire ruled by a king whose evil knows no bounds", "productonesmall");
     public static final Product PRODUCT2 = new Product(2, "334", BigDecimal.valueOf(449.9947), "This is the second book in a three-part series, which takes you on a journey to enlightenment. The first book is called The Light: A Book of Wisdom.", "producttwo");
     public static final Product PRODUCT3 = new Product(3, "1635  The Eastern Front", BigDecimal.valueOf(319.998140), "BackStage is a raucously funny, narrative non-fiction compilation of stories, tales, and gems from the Golden Era of entertainment circa 1960 - 1980.", "productthree");
     public static final Product PRODUCT4 = new Product(4, "Before I knew", BigDecimal.valueOf(319.998140), "Author Jamie Beck returns with an engrossing series about family, friendship, and starting over. In this first Cabot novel, a legacy of secrets tests old friends seeking a second chance at life and love.", "productfour");
